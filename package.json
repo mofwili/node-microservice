@@ -1,20 +1,17 @@
 {
-  "name": "microservice",
+  "name": "simple-microservice",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple Node.js microservice for Argo CD demo",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mofwili/node-microservice.git"
+  "dependencies": {
+    "express": "^4.18.2"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mofwili/node-microservice/issues"
-  },
-  "homepage": "https://github.com/mofwili/node-microservice#readme"
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
 }
